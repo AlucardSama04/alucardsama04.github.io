@@ -1,17 +1,18 @@
 # Site
-title:              Moon
-bio:                'Minimal, one column jekyll theme.'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
-reading_time:       true
-words_per_minute:   200
-logo:               'assets/img/logo.png'
-background:         'assets/img/placeholder-big.jpg'
-tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
+title:              AlucardSama04 Blog
+bio:                'Blog dă fansubăr'
+description:        "Blogul meu."
+logo:               https://i.postimg.cc/bJYndySQ/image.jpg
+avatar:             https://i.imgur.com/p38SMdA.jpg
+notFoundImage:      https://i.postimg.cc/85N1S4n5/d2n30qh-44d67dd6-50a8-4b6e-96ce-0b60a672c96b.png
 locale:             en_US
-url:                https://taylantatli.github.io/Moon
+url:                https://alucardsama04.github.io
+author:             AlucardSama04
 
 # Jekyll
-permalink:          /:title/
+permalink:          /p/:title/
+paginate:           8
+paginate_path:      /post/page:numn
 markdown:           kramdown
 highlighter:        rouge
 kramdown:
@@ -20,54 +21,26 @@ kramdown:
   entity_output:    as_char
   toc_levels:       1..6
   enable_coderay:   false
-mathjax:            true
+
+
 sass:
   sass_dir:         _sass
   style:            compressed
 
 # Comments
-disqus_shortname:   taylantatli
+disqus_shortname:   alucardsama04
+twitter:            AlucardSama04
+github-url:         AlucardSama04
 
-# Social
-# if you don't have any of social below, comment the line.
-#google:
-  #plus:            #username
-  #analytics:
-  #verify:
-  #ad-client:
-  #ad-slot:
-#bing-verify:
-#email:
-twitter:            username
-facebook:           username
-github-url:         username
-#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
-#xing:              username
-instagram:          username
-#lastfm:            username
-#tumblr:            username
-#medium:            '@username'
-#pinterest:         username
-#foursquare:        username
-steam:              username
-#dribbble:          username
-#youtube:           username
-#youtube-channel:   channel
-#soundcloud:        username
-#weibo:             username
-#flickr:            username
-#codepen:           username
-#keybase:           username
-#xmpp:              username@server.com
-#hackernews:        username
 
 # Gems
-gems:
+plugins:
   - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll-seo-tag
+  - jekyll-paginate
 
 jekyll-mentions:
     base_url: https://github.com
