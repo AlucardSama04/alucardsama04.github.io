@@ -3,6 +3,33 @@ layout: page
 title: "404"
 permalink: /404
 comments: false
+excerpt: Pagină inexistentă
 ---
-<p>There doesn't appear to be anything here. Sorry about that.</p>
-<p>If you've followed a link expecting something to be here, you can <a href="mailto:{{ site.email }}?subject=Page%20not%20found">contact me</a>.</p>
+<!DOCTYPE html>
+<html>
+   <head>
+      {% include head.html %}
+      <style type="text/css">
+         body {
+            position: absolute;
+            font-family: 'Open Sans', sans-serif;
+            width: 780px;
+            height: 650px;
+            left: 50%;
+            top: 50%;
+            margin-left: -390px;
+            margin-top: -325px;
+            text-align: center;
+            background-color: rgb(237, 237, 237);
+            color: rgb(100,100,100);
+         }
+      </style>
+     </head>
+   <body>
+      <h2><img src="{{ site.notfoundimage }}" alt="Logo" /></h2>
+      <h1>404</h1>
+      <h3><b>:(</b></h3>
+      <p>Link-ul pe care încerci să-l accesezi nu există</p>
+      <span style="font-size: 10pt"><a href="{{ site.url }}">pagina principală</a></span>
+   </body>
+</html>
